@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		579D25E7235E31D500251EA9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D25E6235E31D500251EA9 /* LoginView.swift */; };
 		7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA647D3235E02F40053C117 /* CircleImage.swift */; };
 		8B0C3F70235A4688000066E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C3F6F235A4688000066E7 /* AppDelegate.swift */; };
 		8B0C3F72235A4688000066E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C3F71235A4688000066E7 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		579D25E6235E31D500251EA9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7FA647D3235E02F40053C117 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		8B0C3F6C235A4688000066E7 /* iBunker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBunker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0C3F6F235A4688000066E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		579D25E5235E31A600251EA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BB68FC0235A5E6E00BD68EB /* ConfigurationView.swift */,
+				579D25E6235E31D500251EA9 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		579D25E8235E31ED00251EA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B0C3F75235A4689000066E7 /* Assets.xcassets */,
+				8B0C3F7A235A4689000066E7 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8B0C3F63235A4688000066E7 = {
 			isa = PBXGroup;
 			children = (
@@ -66,17 +86,16 @@
 		8B0C3F6E235A4688000066E7 /* iBunker */ = {
 			isa = PBXGroup;
 			children = (
+				579D25E8235E31ED00251EA9 /* Resources */,
+				579D25E5235E31A600251EA9 /* Views */,
 				8B0C3F94235A5DDF000066E7 /* Services */,
 				8B0C3F8F235A5D83000066E7 /* Models */,
 				8B0C3F6F235A4688000066E7 /* AppDelegate.swift */,
 				8B0C3F71235A4688000066E7 /* SceneDelegate.swift */,
 				8B0C3F73235A4688000066E7 /* ContentView.swift */,
-				8B0C3F75235A4689000066E7 /* Assets.xcassets */,
-				8B0C3F7A235A4689000066E7 /* LaunchScreen.storyboard */,
-				8B0C3F7D235A4689000066E7 /* Info.plist */,
 				8B0C3F77235A4689000066E7 /* Preview Content */,
-				8BB68FC0235A5E6E00BD68EB /* ConfigurationView.swift */,
 				7FA647D3235E02F40053C117 /* CircleImage.swift */,
+				8B0C3F7D235A4689000066E7 /* Info.plist */,
 			);
 			path = iBunker;
 			sourceTree = "<group>";
@@ -180,6 +199,7 @@
 				8B0C3F70235A4688000066E7 /* AppDelegate.swift in Sources */,
 				7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */,
 				8BB68FC1235A5E6E00BD68EB /* ConfigurationView.swift in Sources */,
+				579D25E7235E31D500251EA9 /* LoginView.swift in Sources */,
 				8B0C3F96235A5DED000066E7 /* LoginService.swift in Sources */,
 				8B0C3F91235A5D99000066E7 /* LoginDTO.swift in Sources */,
 				8B0C3F72235A4688000066E7 /* SceneDelegate.swift in Sources */,
@@ -325,6 +345,7 @@
 				DEVELOPMENT_TEAM = 8468U436K8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iBunker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,6 +366,7 @@
 				DEVELOPMENT_TEAM = 8468U436K8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iBunker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
