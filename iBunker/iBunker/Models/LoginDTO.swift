@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct LoginDTO {
+struct LoginDTO : Codable {
     let user: UserDTO
 }

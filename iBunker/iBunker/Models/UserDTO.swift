@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UserDTO {
+struct UserDTO : Codable {
     let username: String
     let password: String
 }
