@@ -14,24 +14,34 @@ struct ConfigurationView: View {
     
     var body: some View {
         
-        VStack {
+        VStack(alignment: .leading) {
             
-            CircleImage(image: Image("user-icon")).offset(x:-110, y:-130)
+            CircleImage(image: Image("user-icon")).padding(EdgeInsets(top:0, leading:50, bottom: 100, trailing: 0))
             
             //Text("Sample username").offset(x:30, y:-210)
             
             HStack{
                 Image(systemName: "book")
-                Text("Términos y Condiciones")
-            }
+                Text("Términos y Condiciones").padding(.leading, 20)
+                Spacer()
+            }.padding(EdgeInsets(top:40, leading:50, bottom: 40, trailing: 90))
+            
+            //Rectangle().frame(height:1).foregroundColor(.gray)
+            
             HStack{
                 Image(systemName: "plus.square")
-                Text("Agregar un Espacio")
-            }
+                Text("Agregar un Espacio").padding(.leading, 20)
+                Spacer()
+            }.padding(EdgeInsets(top:40, leading:50, bottom: 40, trailing: 90))
+            
+            
+            
             HStack{
                 Image(systemName: "power")
-                Text("Cerrar Sesión")
-            }
+                Text("Cerrar Sesión").padding(.leading, 20)
+                Spacer()
+            }.padding(EdgeInsets(top:40, leading:50, bottom: 40, trailing: 90))
+            
         }
         
         
