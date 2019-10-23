@@ -10,7 +10,23 @@ import SwiftUI
 
 struct DashboardView: View {
     var body: some View {
-        Text("Dashboard View!")
+        TabView {
+            Text("First View")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Buscar")
+                }.tag(0)
+            Text("Second View")
+                .tabItem {
+                    Image(systemName: "person.circle")
+                    Text("Mis Solicitudes")
+                }.tag(1)
+            Text("ThirdView View")
+            .tabItem {
+                Image(systemName: "person")
+                Text("Perfil")
+            }.tag(1)
+        }
     }
 }
 
