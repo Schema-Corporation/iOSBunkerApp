@@ -10,6 +10,12 @@
 		575F8EEB236017A300C360AE /* HttpAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEA236017A300C360AE /* HttpAuth.swift */; };
 		575F8EED2360186000C360AE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEC2360186000C360AE /* DashboardView.swift */; };
 		575F8EEF236018AD00C360AE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEE236018AD00C360AE /* RootView.swift */; };
+		576FC5692361591E00D63BDB /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC5682361591E00D63BDB /* RegistrationView.swift */; };
+		576FC56B236159F300D63BDB /* FindSpacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC56A236159F300D63BDB /* FindSpacesView.swift */; };
+		576FC56F236162CD00D63BDB /* GetSpacesAround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC56E236162CD00D63BDB /* GetSpacesAround.swift */; };
+		576FC5712361786D00D63BDB /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC5702361786D00D63BDB /* ImageView.swift */; };
+		576FC57323618DA600D63BDB /* SpacesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC57223618DA500D63BDB /* SpacesRow.swift */; };
+		576FC5752361904200D63BDB /* SpacesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC5742361904200D63BDB /* SpacesDetailsView.swift */; };
 		579D25E7235E31D500251EA9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D25E6235E31D500251EA9 /* LoginView.swift */; };
 		7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA647D3235E02F40053C117 /* CircleImage.swift */; };
 		8B0C3F70235A4688000066E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C3F6F235A4688000066E7 /* AppDelegate.swift */; };
@@ -27,6 +33,12 @@
 		575F8EEA236017A300C360AE /* HttpAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpAuth.swift; sourceTree = "<group>"; };
 		575F8EEC2360186000C360AE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		575F8EEE236018AD00C360AE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		576FC5682361591E00D63BDB /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		576FC56A236159F300D63BDB /* FindSpacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSpacesView.swift; sourceTree = "<group>"; };
+		576FC56E236162CD00D63BDB /* GetSpacesAround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpacesAround.swift; sourceTree = "<group>"; };
+		576FC5702361786D00D63BDB /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		576FC57223618DA500D63BDB /* SpacesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesRow.swift; sourceTree = "<group>"; };
+		576FC5742361904200D63BDB /* SpacesDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesDetailsView.swift; sourceTree = "<group>"; };
 		579D25E6235E31D500251EA9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7FA647D3235E02F40053C117 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		8B0C3F6C235A4688000066E7 /* iBunker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBunker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +72,11 @@
 				579D25E6235E31D500251EA9 /* LoginView.swift */,
 				575F8EEC2360186000C360AE /* DashboardView.swift */,
 				575F8EEE236018AD00C360AE /* RootView.swift */,
+				576FC5682361591E00D63BDB /* RegistrationView.swift */,
+				576FC56A236159F300D63BDB /* FindSpacesView.swift */,
+				576FC5702361786D00D63BDB /* ImageView.swift */,
+				576FC57223618DA500D63BDB /* SpacesRow.swift */,
+				576FC5742361904200D63BDB /* SpacesDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				575F8EEA236017A300C360AE /* HttpAuth.swift */,
+				576FC56E236162CD00D63BDB /* GetSpacesAround.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -202,12 +220,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576FC5712361786D00D63BDB /* ImageView.swift in Sources */,
+				576FC57323618DA600D63BDB /* SpacesRow.swift in Sources */,
+				576FC56F236162CD00D63BDB /* GetSpacesAround.swift in Sources */,
 				8B0C3F70235A4688000066E7 /* AppDelegate.swift in Sources */,
 				575F8EEB236017A300C360AE /* HttpAuth.swift in Sources */,
 				7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */,
+				576FC5692361591E00D63BDB /* RegistrationView.swift in Sources */,
 				8BB68FC1235A5E6E00BD68EB /* ConfigurationView.swift in Sources */,
 				579D25E7235E31D500251EA9 /* LoginView.swift in Sources */,
+				576FC56B236159F300D63BDB /* FindSpacesView.swift in Sources */,
 				8B0C3F91235A5D99000066E7 /* LoginDTO.swift in Sources */,
+				576FC5752361904200D63BDB /* SpacesDetailsView.swift in Sources */,
 				8B0C3F72235A4688000066E7 /* SceneDelegate.swift in Sources */,
 				575F8EED2360186000C360AE /* DashboardView.swift in Sources */,
 				8B0C3F93235A5DC4000066E7 /* UserDTO.swift in Sources */,

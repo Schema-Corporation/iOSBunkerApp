@@ -11,7 +11,7 @@ import SwiftUI
 struct DashboardView: View {
     var body: some View {
         TabView {
-            Text("First View")
+            FindSpacesView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Buscar")
@@ -21,11 +21,11 @@ struct DashboardView: View {
                     Image(systemName: "person.circle")
                     Text("Mis Solicitudes")
                 }.tag(1)
-            Text("ThirdView View")
+            ConfigurationView()
             .tabItem {
                 Image(systemName: "person")
                 Text("Perfil")
-            }.tag(1)
+            }.tag(2)
         }
     }
 }

@@ -1,19 +1,18 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  iBunker
 //
-//  Created by Marcelo Ríos on 10/21/19.
+//  Created by Victor on 10/23/19.
 //  Copyright © 2019 Developer. All rights reserved.
 //
 
 import SwiftUI
 import Combine
-
-struct LoginView: View {
+struct RegistrationView: View {
     
-    @State private var username: String = ""
-    @State private var password: String = ""
-    @State var counter: Int = 0
+    @State private var username: String=""
+    @State private var password:String=""
+  
     
     @ObservedObject var manager = HttpAuth()
     
@@ -24,7 +23,7 @@ struct LoginView: View {
                     VStack {
         Image("bunker-logo").resizable().aspectRatio(contentMode: ContentMode.fit)
             .frame(width: CGFloat(350.0), height: CGFloat(150.0)).padding(Edge.Set.bottom, CGFloat(20.0))
-                        Text("Login").font(.title)
+                        Text("Register").font(.title)
             TextField("Usuario", text: $username)
             .padding()
                 .background(Color(.white)).autocapitalization(.none)
@@ -37,15 +36,15 @@ struct LoginView: View {
         
         HStack() {
             Spacer()
-            NavigationLink(destination: RegistrationView()) {
-                Text("Registrarse")
+            NavigationLink(destination: ContentView()) {
+                Text("Ya tienes cuenta ? Inicia Sesión")
             }
         }.padding(.bottom, CGFloat(40.0))
                         
         Button(action: submit) {
             HStack {
                 Spacer()
-                Text("Login").foregroundColor(.white)
+                Text("SignUp").foregroundColor(.white)
                 Spacer()
             }
             
@@ -54,17 +53,16 @@ struct LoginView: View {
                     }.padding()
             }
             Spacer()
-            }.background(Image("bunker-background-image-2").resizable().scaledToFill())
+        }.background(Image("bunker-background-image-3").resizable())
         
     }
-    
     func submit() {
         self.manager.checkDetails(username: self.username, password: self.password)
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        RegistrationView()
     }
 }
