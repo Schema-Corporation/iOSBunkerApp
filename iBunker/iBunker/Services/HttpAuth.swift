@@ -44,10 +44,18 @@ class HttpAuth: ObservableObject {
                     // set alert
                 } else {
                     if httpResponse.statusCode == 200 {
-                        // send to navigation page
-                        DispatchQueue.main.async {
-                            self.authenticated = true
+                        if let httpResponse = response as? HTTPURLResponse {
+                             if let authToken = httpResponse.allHeaderFields["Authorization"] as? String {
+                                //
+                                DispatchQueue.main.async {
+                                    let defaults = UserDefaults.standard
+                                    defaults.set(authToken, forKey: "authToken")
+                                    
+                                    self.authenticated = true
+                                }
+                             }
                         }
+                        
                     }
                 }
                 print(httpResponse.statusCode)

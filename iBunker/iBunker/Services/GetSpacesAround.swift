@@ -33,20 +33,18 @@ class GetSpacesAround : ObservableObject {
     init() {
         guard let url = URL(string: "https://bunker-253200.appspot.com/api/v1/spaces/info_around/") else { return }
         
+        let defaults = UserDefaults.standard
+        let authToken = defaults.string(forKey: "authToken")
+        
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
-        request.setValue("Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNTcxOTEzNjM1LCJleHAiOjE1NzE5MTU0MzUsImp0aSI6IjM4MDdkMTJhLTAwZDAtNGNmYS05N2NiLTZkODg4Mjg5NzZmZSJ9.x6CzllAL9BjRyo6Ync_APJcE28QD9RbgbdVizkkQAr8", forHTTPHeaderField: "Authorization")
+        request.setValue(authToken, forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         URLSession.shared.dataTask(with: request) {
             (data, response, error) in
             guard let data = data else { return }
-            
-            print(data)
-            
-            let str = String(decoding: data, as: UTF8.self)
-            print(str)
             
             let spacesAroundList = try! JSONDecoder().decode([SpacesInfo].self, from: data)
             DispatchQueue.main.async {
