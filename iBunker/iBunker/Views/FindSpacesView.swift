@@ -17,8 +17,9 @@ struct FindSpacesView: View {
         NavigationView{
             List (getSpacesAround.spacesAroundList, id: \.id){ space in
                 
-                //NavigationLink(destination: SpacesDetailsView(space: space)){
+                NavigationLink(destination: SpacesDetailsView()){
                     VStack(alignment: .leading){
+                       
                         ImageView(withURL: space.first_photo).frame(minWidth:0, maxWidth: .infinity)
     
                             Text(space.title).font(.title).bold()
@@ -28,7 +29,7 @@ struct FindSpacesView: View {
                         
                     }.padding(EdgeInsets(top:4, leading:0, bottom: 4, trailing: 0))
                 
-                //}
+                }
                 
             }
             .navigationBarTitle(Text("Búsqueda de Espacios"))
