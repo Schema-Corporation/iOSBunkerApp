@@ -20,7 +20,7 @@ struct ImageView: View {
             Image(uiImage: imageLoader.dataIsValid ? imageFromData(imageLoader.data!) : UIImage())
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width:400, height:160)
+                .edgesIgnoringSafeArea(.horizontal)
         }
     }
 
