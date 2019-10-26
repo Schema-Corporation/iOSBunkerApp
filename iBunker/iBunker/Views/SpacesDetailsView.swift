@@ -13,7 +13,7 @@ struct SpacesDetailsView: View {
     var body: some View {
         // getSpacesAround.spacesAroundList.i
         // ImageView(withURL: )
-        Text("Details")
+        DashboardTabBarView().hidden()
     }
 }
 
