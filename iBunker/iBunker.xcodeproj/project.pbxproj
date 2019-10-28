@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57183F0A2366B2EA00BB93C2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57183F092366B2EA00BB93C2 /* LocationManager.swift */; };
 		575F8EEB236017A300C360AE /* HttpAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEA236017A300C360AE /* HttpAuth.swift */; };
 		575F8EED2360186000C360AE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEC2360186000C360AE /* DashboardView.swift */; };
 		575F8EEF236018AD00C360AE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEE236018AD00C360AE /* RootView.swift */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57183F092366B2EA00BB93C2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		57183F0B2366B61800BB93C2 /* CurrentLocationGPX.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CurrentLocationGPX.gpx; sourceTree = "<group>"; };
 		575F8EEA236017A300C360AE /* HttpAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpAuth.swift; sourceTree = "<group>"; };
 		575F8EEC2360186000C360AE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		575F8EEE236018AD00C360AE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 				576FC57223618DA500D63BDB /* SpacesRow.swift */,
 				576FC5742361904200D63BDB /* SpacesDetailsView.swift */,
 				57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */,
+				57183F092366B2EA00BB93C2 /* LocationManager.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +93,7 @@
 			children = (
 				8B0C3F75235A4689000066E7 /* Assets.xcassets */,
 				8B0C3F7A235A4689000066E7 /* LaunchScreen.storyboard */,
+				57183F0B2366B61800BB93C2 /* CurrentLocationGPX.gpx */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				8B0C3F93235A5DC4000066E7 /* UserDTO.swift in Sources */,
 				57FA5096236488C4005B3BA2 /* DashboardTabBarView.swift in Sources */,
 				8B0C3F74235A4688000066E7 /* ContentView.swift in Sources */,
+				57183F0A2366B2EA00BB93C2 /* LocationManager.swift in Sources */,
 				575F8EEF236018AD00C360AE /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

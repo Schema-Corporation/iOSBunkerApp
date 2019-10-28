@@ -25,7 +25,7 @@ struct SpacesInfo : Decodable {
 class GetSpacesAround : ObservableObject {
     var objectWillChange = PassthroughSubject<GetSpacesAround, Never>()
     @Published var spacesAroundList = [SpacesInfo]() {
-        didSet {
+        willSet {
             objectWillChange.send(self)
         }
     }

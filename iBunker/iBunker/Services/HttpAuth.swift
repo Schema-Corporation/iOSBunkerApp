@@ -17,7 +17,7 @@ class ServerMessage: Decodable {
 class HttpAuth: ObservableObject {
     var objectWillChange = PassthroughSubject<HttpAuth, Never>()
     @Published var authenticated = false {
-        didSet {
+        willSet {
             objectWillChange.send(self)
         }
     }
