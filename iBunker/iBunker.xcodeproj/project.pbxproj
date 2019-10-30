@@ -17,7 +17,7 @@
 		576FC5712361786D00D63BDB /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC5702361786D00D63BDB /* ImageView.swift */; };
 		576FC57323618DA600D63BDB /* SpacesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC57223618DA500D63BDB /* SpacesRow.swift */; };
 		576FC5752361904200D63BDB /* SpacesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC5742361904200D63BDB /* SpacesDetailsView.swift */; };
-		579D25E7235E31D500251EA9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D25E6235E31D500251EA9 /* LoginView.swift */; };
+		57887EBA2367A28D006DAE93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D25E6235E31D500251EA9 /* LoginView.swift */; };
 		57FA5096236488C4005B3BA2 /* DashboardTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */; };
 		7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA647D3235E02F40053C117 /* CircleImage.swift */; };
 		8B0C3F70235A4688000066E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C3F6F235A4688000066E7 /* AppDelegate.swift */; };
@@ -70,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57887EB923679D5B006DAE93 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				57183F0B2366B61800BB93C2 /* CurrentLocationGPX.gpx */,
+				57183F092366B2EA00BB93C2 /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		579D25E5235E31A600251EA9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +92,6 @@
 				576FC57223618DA500D63BDB /* SpacesRow.swift */,
 				576FC5742361904200D63BDB /* SpacesDetailsView.swift */,
 				57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */,
-				57183F092366B2EA00BB93C2 /* LocationManager.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,7 +101,7 @@
 			children = (
 				8B0C3F75235A4689000066E7 /* Assets.xcassets */,
 				8B0C3F7A235A4689000066E7 /* LaunchScreen.storyboard */,
-				57183F0B2366B61800BB93C2 /* CurrentLocationGPX.gpx */,
+				57887EB923679D5B006DAE93 /* Location */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -236,7 +244,6 @@
 				7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */,
 				576FC5692361591E00D63BDB /* RegistrationView.swift in Sources */,
 				8BB68FC1235A5E6E00BD68EB /* ConfigurationView.swift in Sources */,
-				579D25E7235E31D500251EA9 /* LoginView.swift in Sources */,
 				576FC56B236159F300D63BDB /* FindSpacesView.swift in Sources */,
 				8B0C3F91235A5D99000066E7 /* LoginDTO.swift in Sources */,
 				576FC5752361904200D63BDB /* SpacesDetailsView.swift in Sources */,
@@ -245,6 +252,7 @@
 				8B0C3F93235A5DC4000066E7 /* UserDTO.swift in Sources */,
 				57FA5096236488C4005B3BA2 /* DashboardTabBarView.swift in Sources */,
 				8B0C3F74235A4688000066E7 /* ContentView.swift in Sources */,
+				57887EBA2367A28D006DAE93 /* LoginView.swift in Sources */,
 				57183F0A2366B2EA00BB93C2 /* LocationManager.swift in Sources */,
 				575F8EEF236018AD00C360AE /* RootView.swift in Sources */,
 			);

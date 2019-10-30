@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct SpacesDetailsView: View {
-    @ObservedObject var getSpacesAround = GetSpacesAround()
+    
     var body: some View {
         // getSpacesAround.spacesAroundList.i
         // ImageView(withURL: )

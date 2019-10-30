@@ -8,10 +8,22 @@
 
 import SwiftUI
 
-
 struct FindSpacesView: View {
-    @ObservedObject var getSpacesAround = GetSpacesAround()
-    //var spaces :Spaces
+    
+    @ObservedObject var locationManager = LocationManager()
+
+    var userLatitude: String {
+         return "\(locationManager.lastLocation?.coordinate.latitude ?? 0.00)"
+    }
+
+    var userLongitude: String {
+         return "\(locationManager.lastLocation?.coordinate.longitude ?? 0.00)"
+    }
+    
+    
+    @ObservedObject var getSpacesAround = GetSpacesAround.init(userLatitude: -12.076460,userLongitude: -77.045110)
+    
+    
     var body: some View {
         
         NavigationView{
