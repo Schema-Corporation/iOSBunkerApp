@@ -21,30 +21,16 @@ struct FindSpacesView: View {
     }
     
     
-    @ObservedObject var getSpacesAround = GetSpacesAround.init(userLatitude: -12.076460,userLongitude: -77.045110)
-    
+    @ObservedObject private var spaceListViewModel = SpaceListViewModel()
     
     var body: some View {
          NavigationView {
-            List (getSpacesAround.spacesAroundList, id: \.id){ space in
-                
-                NavigationLink(destination: SpacesDetailsView()){
-                    VStack(alignment: .leading){
-                       
-                        ImageView(withURL: space.first_photo).frame(minWidth:0, maxWidth: .infinity)
-    
-                            Text(space.title).font(.title).bold()
-                            Text(space.address)
-                            Text("S/" + space.rent_price + "0")
-                        
-                        
-                    }.padding(EdgeInsets(top:4, leading:0, bottom: 4, trailing: 0))
-                
-                    }
-                
-                
+            List (self.spaceListViewModel.spaces){ space in
+                NavigationLink(destination: SpacesDetailsView(space: space)) {
+                    SpacesRow(space: space)
             }
             .navigationBarTitle(Text("Búsqueda de Espacios"))
+            }
         }
     }
 }

@@ -22,15 +22,17 @@ struct SpacesInfo : Decodable {
     
 }
 
-class GetSpacesAround: ObservableObject {
+class GetSpacesAround {
+    /*
     var objectWillChange = PassthroughSubject<GetSpacesAround, Never>()
     @Published var spacesAroundList = [SpacesInfo]() {
         willSet {
             objectWillChange.send(self)
         }
     }
+     */
     
-    init(userLatitude: Double, userLongitude: Double) {
+    func getSpacesAround(userLatitude: Double, userLongitude: Double, completion: @escaping ([SpacesInfo]?) -> ()) {
         guard let url = URL(string: "https://bunker-258012.appspot.com/api/v1/spaces/info_around/") else { return }
         
         let defaults = UserDefaults.standard
@@ -54,9 +56,9 @@ class GetSpacesAround: ObservableObject {
             (data, response, error) in
             guard let data = data else { return }
             
-            let spacesAroundList = try! JSONDecoder().decode([SpacesInfo].self, from: data)
+            let spacesAroundList = try? JSONDecoder().decode([SpacesInfo].self, from: data)
             DispatchQueue.main.async {
-                self.spacesAroundList = spacesAroundList
+                completion(spacesAroundList)
             }
             
             

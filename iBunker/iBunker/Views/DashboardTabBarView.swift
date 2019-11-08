@@ -2,7 +2,7 @@
 //  DashboardTabBarView.swift
 //  iBunker
 //
-//  Created by Gerson Padilla Ramos on 10/26/19.
+//  Created by Marcelo Ríos on 10/26/19.
 //  Copyright © 2019 Developer. All rights reserved.
 //
 

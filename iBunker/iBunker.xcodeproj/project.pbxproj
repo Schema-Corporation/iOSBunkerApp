@@ -15,10 +15,12 @@
 		576FC56B236159F300D63BDB /* FindSpacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC56A236159F300D63BDB /* FindSpacesView.swift */; };
 		576FC56F236162CD00D63BDB /* GetSpacesAround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC56E236162CD00D63BDB /* GetSpacesAround.swift */; };
 		576FC5712361786D00D63BDB /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC5702361786D00D63BDB /* ImageView.swift */; };
-		576FC57323618DA600D63BDB /* SpacesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC57223618DA500D63BDB /* SpacesRow.swift */; };
 		576FC5752361904200D63BDB /* SpacesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC5742361904200D63BDB /* SpacesDetailsView.swift */; };
 		57887EBA2367A28D006DAE93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D25E6235E31D500251EA9 /* LoginView.swift */; };
 		57FA5096236488C4005B3BA2 /* DashboardTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */; };
+		7F4EFA9B237602620021C60B /* SpaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EFA98237600970021C60B /* SpaceViewModel.swift */; };
+		7F4EFA9C2376026F0021C60B /* SpacesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC57223618DA500D63BDB /* SpacesRow.swift */; };
+		7F4EFA9F237604420021C60B /* SpaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EFA9D237603320021C60B /* SpaceListViewModel.swift */; };
 		7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA647D3235E02F40053C117 /* CircleImage.swift */; };
 		8B0C3F70235A4688000066E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C3F6F235A4688000066E7 /* AppDelegate.swift */; };
 		8B0C3F72235A4688000066E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C3F71235A4688000066E7 /* SceneDelegate.swift */; };
@@ -45,6 +47,8 @@
 		576FC5742361904200D63BDB /* SpacesDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesDetailsView.swift; sourceTree = "<group>"; };
 		579D25E6235E31D500251EA9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBarView.swift; sourceTree = "<group>"; };
+		7F4EFA98237600970021C60B /* SpaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceViewModel.swift; sourceTree = "<group>"; };
+		7F4EFA9D237603320021C60B /* SpaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceListViewModel.swift; sourceTree = "<group>"; };
 		7FA647D3235E02F40053C117 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		8B0C3F6C235A4688000066E7 /* iBunker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBunker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0C3F6F235A4688000066E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		7F4EFA97237600670021C60B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7F4EFA98237600970021C60B /* SpaceViewModel.swift */,
+				7F4EFA9D237603320021C60B /* SpaceListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		8B0C3F63235A4688000066E7 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +138,7 @@
 		8B0C3F6E235A4688000066E7 /* iBunker */ = {
 			isa = PBXGroup;
 			children = (
+				7F4EFA97237600670021C60B /* ViewModels */,
 				579D25E8235E31ED00251EA9 /* Resources */,
 				579D25E5235E31A600251EA9 /* Views */,
 				8B0C3F94235A5DDF000066E7 /* Services */,
@@ -237,15 +251,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				576FC5712361786D00D63BDB /* ImageView.swift in Sources */,
-				576FC57323618DA600D63BDB /* SpacesRow.swift in Sources */,
 				576FC56F236162CD00D63BDB /* GetSpacesAround.swift in Sources */,
 				8B0C3F70235A4688000066E7 /* AppDelegate.swift in Sources */,
 				575F8EEB236017A300C360AE /* HttpAuth.swift in Sources */,
+				7F4EFA9F237604420021C60B /* SpaceListViewModel.swift in Sources */,
 				7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */,
 				576FC5692361591E00D63BDB /* RegistrationView.swift in Sources */,
 				8BB68FC1235A5E6E00BD68EB /* ConfigurationView.swift in Sources */,
 				576FC56B236159F300D63BDB /* FindSpacesView.swift in Sources */,
 				8B0C3F91235A5D99000066E7 /* LoginDTO.swift in Sources */,
+				7F4EFA9C2376026F0021C60B /* SpacesRow.swift in Sources */,
 				576FC5752361904200D63BDB /* SpacesDetailsView.swift in Sources */,
 				8B0C3F72235A4688000066E7 /* SceneDelegate.swift in Sources */,
 				575F8EED2360186000C360AE /* DashboardView.swift in Sources */,
@@ -253,6 +268,7 @@
 				57FA5096236488C4005B3BA2 /* DashboardTabBarView.swift in Sources */,
 				8B0C3F74235A4688000066E7 /* ContentView.swift in Sources */,
 				57887EBA2367A28D006DAE93 /* LoginView.swift in Sources */,
+				7F4EFA9B237602620021C60B /* SpaceViewModel.swift in Sources */,
 				57183F0A2366B2EA00BB93C2 /* LocationManager.swift in Sources */,
 				575F8EEF236018AD00C360AE /* RootView.swift in Sources */,
 			);
