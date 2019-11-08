@@ -23,7 +23,7 @@ class HttpAuth: ObservableObject {
     }
     
     func checkDetails(username: String, password: String) {
-        guard let url = URL(string: "https://bunker-253200.appspot.com/login") else { return }
+        guard let url = URL(string: "https://bunker-258012.appspot.com/login") else { return }
         
         let user: [String: String] = ["email": username, "password": password]
         

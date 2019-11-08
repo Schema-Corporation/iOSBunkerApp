@@ -25,7 +25,7 @@ struct FindSpacesView: View {
     
     
     var body: some View {
-        
+         NavigationView {
             List (getSpacesAround.spacesAroundList, id: \.id){ space in
                 
                 NavigationLink(destination: SpacesDetailsView()){
@@ -45,7 +45,7 @@ struct FindSpacesView: View {
                 
             }
             .navigationBarTitle(Text("Búsqueda de Espacios"))
-      
+        }
     }
 }
 

@@ -31,7 +31,7 @@ class GetSpacesAround: ObservableObject {
     }
     
     init(userLatitude: Double, userLongitude: Double) {
-        guard let url = URL(string: "https://bunker-253200.appspot.com/api/v1/spaces/info_around/") else { return }
+        guard let url = URL(string: "https://bunker-258012.appspot.com/api/v1/spaces/info_around/") else { return }
         
         let defaults = UserDefaults.standard
         let authToken = defaults.string(forKey: "authToken")
