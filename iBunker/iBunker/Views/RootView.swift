@@ -12,13 +12,16 @@ struct RootView: View {
     @ObservedObject var manager = HttpAuth()
     
     var body: some View {
+     
         VStack {
             if manager.authenticated {
                 DashboardView()
             } else {
-                LoginView(manager: manager)
+                //LoginView(manager: manager)
+                DashboardView()
             }
         }
+        
     }
 }
 

@@ -46,10 +46,19 @@ class HttpAuth: ObservableObject {
                     if httpResponse.statusCode == 200 {
                         if let httpResponse = response as? HTTPURLResponse {
                              if let authToken = httpResponse.allHeaderFields["Authorization"] as? String {
+                                
+                                let user = try? JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any]
+                                
+                                let strData = String(data: data!, encoding: String.Encoding.utf8) as String?
+                                print(strData!)
+                                
+                                guard let id = user?["id"] as? Int else { return }
+                                
                                 //
                                 DispatchQueue.main.async {
                                     let defaults = UserDefaults.standard
                                     defaults.set(authToken, forKey: "authToken")
+                                    defaults.set(id, forKey: "userId")
                                     
                                     self.authenticated = true
                                 }
