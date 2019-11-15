@@ -19,7 +19,18 @@ struct SpacesInfo : Decodable {
     var title: String
     var address: String
     var first_photo: String
-    
+    var width: String
+    var height: String
+    var area: String
+    var services: [ServicesInfo]
+}
+
+struct ServicesInfo : Decodable {
+    var id: Int
+    var name: String
+    var description: String
+    var created_at: String
+    var updated_at: String
 }
 
 class GetSpacesAround {
@@ -57,6 +68,10 @@ class GetSpacesAround {
             guard let data = data else { return }
             
             let spacesAroundList = try? JSONDecoder().decode([SpacesInfo].self, from: data)
+            
+            let strData = String(data: data, encoding: String.Encoding.utf8) as String?
+            print(strData!)
+          
             DispatchQueue.main.async {
                 completion(spacesAroundList)
             }

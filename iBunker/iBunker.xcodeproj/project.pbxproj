@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125CB52CAEA1FD7F75132163 /* Pods_iBunker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B1A4FB446A2F7FC070D765 /* Pods_iBunker.framework */; };
+		5700DCDA237A268C00E423C5 /* BookingProcessStepOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5700DCD8237A1EFB00E423C5 /* BookingProcessStepOneView.swift */; };
+		5700DCDC237A2FF500E423C5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5700DCDB237A2FF500E423C5 /* ButtonView.swift */; };
 		57183F0A2366B2EA00BB93C2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57183F092366B2EA00BB93C2 /* LocationManager.swift */; };
+		571B73D2237E556700CE83E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571B73D1237E556600CE83E7 /* GoogleService-Info.plist */; };
 		575F8EEB236017A300C360AE /* HttpAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEA236017A300C360AE /* HttpAuth.swift */; };
 		575F8EED2360186000C360AE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEC2360186000C360AE /* DashboardView.swift */; };
 		575F8EEF236018AD00C360AE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEE236018AD00C360AE /* RootView.swift */; };
@@ -17,6 +21,8 @@
 		576FC5712361786D00D63BDB /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC5702361786D00D63BDB /* ImageView.swift */; };
 		576FC5752361904200D63BDB /* SpacesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC5742361904200D63BDB /* SpacesDetailsView.swift */; };
 		57887EBA2367A28D006DAE93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D25E6235E31D500251EA9 /* LoginView.swift */; };
+		579819A9237B9BA000E39BC8 /* DashboardTabBarSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579819A8237B9BA000E39BC8 /* DashboardTabBarSUIView.swift */; };
+		579819AC237B9BF600E39BC8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 579819AB237B9BF600E39BC8 /* SwiftPackageProductDependency */; };
 		57E83D092376FD580043D067 /* SpaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E83D082376FD580043D067 /* SpaceListViewModel.swift */; };
 		57FA5096236488C4005B3BA2 /* DashboardTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */; };
 		7F4EFA9B237602620021C60B /* SpaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EFA98237600970021C60B /* SpaceViewModel.swift */; };
@@ -34,8 +40,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DF9C2DB1E6E07EE96AE6154 /* Pods-iBunker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBunker.release.xcconfig"; path = "Target Support Files/Pods-iBunker/Pods-iBunker.release.xcconfig"; sourceTree = "<group>"; };
+		5700DCD8237A1EFB00E423C5 /* BookingProcessStepOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingProcessStepOneView.swift; sourceTree = "<group>"; };
+		5700DCDB237A2FF500E423C5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		57183F092366B2EA00BB93C2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		57183F0B2366B61800BB93C2 /* CurrentLocationGPX.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CurrentLocationGPX.gpx; sourceTree = "<group>"; };
+		571B73D1237E556600CE83E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		575F8EEA236017A300C360AE /* HttpAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpAuth.swift; sourceTree = "<group>"; };
 		575F8EEC2360186000C360AE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		575F8EEE236018AD00C360AE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -45,6 +55,7 @@
 		576FC5702361786D00D63BDB /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		576FC57223618DA500D63BDB /* SpacesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesRow.swift; sourceTree = "<group>"; };
 		576FC5742361904200D63BDB /* SpacesDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesDetailsView.swift; sourceTree = "<group>"; };
+		579819A8237B9BA000E39BC8 /* DashboardTabBarSUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBarSUIView.swift; sourceTree = "<group>"; };
 		579D25E6235E31D500251EA9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		57E83D082376FD580043D067 /* SpaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceListViewModel.swift; sourceTree = "<group>"; };
 		57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBarView.swift; sourceTree = "<group>"; };
@@ -61,6 +72,8 @@
 		8B0C3F90235A5D99000066E7 /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
 		8B0C3F92235A5DC4000066E7 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
 		8BB68FC0235A5E6E00BD68EB /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		A4B1A4FB446A2F7FC070D765 /* Pods_iBunker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBunker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E002677927211F7AC7A4195C /* Pods-iBunker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBunker.debug.xcconfig"; path = "Target Support Files/Pods-iBunker/Pods-iBunker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +81,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579819AC237B9BF600E39BC8 /* BuildFile in Frameworks */,
+				125CB52CAEA1FD7F75132163 /* Pods_iBunker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202B21C8DF679527589DE1F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4B1A4FB446A2F7FC070D765 /* Pods_iBunker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		57887EB923679D5B006DAE93 /* Location */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +119,8 @@
 				576FC57223618DA500D63BDB /* SpacesRow.swift */,
 				576FC5742361904200D63BDB /* SpacesDetailsView.swift */,
 				57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */,
+				5700DCD8237A1EFB00E423C5 /* BookingProcessStepOneView.swift */,
+				579819A8237B9BA000E39BC8 /* DashboardTabBarSUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +140,7 @@
 			children = (
 				7F4EFA98237600970021C60B /* SpaceViewModel.swift */,
 				57E83D082376FD580043D067 /* SpaceListViewModel.swift */,
+				5700DCDB237A2FF500E423C5 /* ButtonView.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -124,6 +150,8 @@
 			children = (
 				8B0C3F6E235A4688000066E7 /* iBunker */,
 				8B0C3F6D235A4688000066E7 /* Products */,
+				A0970F0C877C622EBF90B6DB /* Pods */,
+				202B21C8DF679527589DE1F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +177,7 @@
 				8B0C3F77235A4689000066E7 /* Preview Content */,
 				7FA647D3235E02F40053C117 /* CircleImage.swift */,
 				8B0C3F7D235A4689000066E7 /* Info.plist */,
+				571B73D1237E556600CE83E7 /* GoogleService-Info.plist */,
 			);
 			path = iBunker;
 			sourceTree = "<group>";
@@ -179,6 +208,16 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		A0970F0C877C622EBF90B6DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E002677927211F7AC7A4195C /* Pods-iBunker.debug.xcconfig */,
+				0DF9C2DB1E6E07EE96AE6154 /* Pods-iBunker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,15 +225,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B0C3F80235A4689000066E7 /* Build configuration list for PBXNativeTarget "iBunker" */;
 			buildPhases = (
+				341DA7B42FBE36EDB1B2FA27 /* [CP] Check Pods Manifest.lock */,
 				8B0C3F68235A4688000066E7 /* Sources */,
 				8B0C3F69235A4688000066E7 /* Frameworks */,
 				8B0C3F6A235A4688000066E7 /* Resources */,
+				A63AF815DF231A54736B7149 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iBunker;
+			packageProductDependencies = (
+				579819AB237B9BF600E39BC8 /* SwiftPackageProductDependency */,
+			);
 			productName = iBunker;
 			productReference = 8B0C3F6C235A4688000066E7 /* iBunker.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +267,9 @@
 				Base,
 			);
 			mainGroup = 8B0C3F63235A4688000066E7;
+			packageReferences = (
+				579819AA237B9BF600E39BC8 /* RemoteSwiftPackageReference */,
+			);
 			productRefGroup = 8B0C3F6D235A4688000066E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,12 +285,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0C3F7C235A4689000066E7 /* LaunchScreen.storyboard in Resources */,
+				571B73D2237E556700CE83E7 /* GoogleService-Info.plist in Resources */,
 				8B0C3F79235A4689000066E7 /* Preview Assets.xcassets in Resources */,
 				8B0C3F76235A4689000066E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		341DA7B42FBE36EDB1B2FA27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iBunker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A63AF815DF231A54736B7149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iBunker/Pods-iBunker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iBunker/Pods-iBunker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iBunker/Pods-iBunker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B0C3F68235A4688000066E7 /* Sources */ = {
@@ -255,6 +345,8 @@
 				8B0C3F70235A4688000066E7 /* AppDelegate.swift in Sources */,
 				575F8EEB236017A300C360AE /* HttpAuth.swift in Sources */,
 				57E83D092376FD580043D067 /* SpaceListViewModel.swift in Sources */,
+				5700DCDA237A268C00E423C5 /* BookingProcessStepOneView.swift in Sources */,
+				5700DCDC237A2FF500E423C5 /* ButtonView.swift in Sources */,
 				7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */,
 				576FC5692361591E00D63BDB /* RegistrationView.swift in Sources */,
 				8BB68FC1235A5E6E00BD68EB /* ConfigurationView.swift in Sources */,
@@ -263,6 +355,7 @@
 				7F4EFA9C2376026F0021C60B /* SpacesRow.swift in Sources */,
 				576FC5752361904200D63BDB /* SpacesDetailsView.swift in Sources */,
 				8B0C3F72235A4688000066E7 /* SceneDelegate.swift in Sources */,
+				579819A9237B9BA000E39BC8 /* DashboardTabBarSUIView.swift in Sources */,
 				575F8EED2360186000C360AE /* DashboardView.swift in Sources */,
 				8B0C3F93235A5DC4000066E7 /* UserDTO.swift in Sources */,
 				57FA5096236488C4005B3BA2 /* DashboardTabBarView.swift in Sources */,
@@ -404,11 +497,12 @@
 		};
 		8B0C3F81235A4689000066E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E002677927211F7AC7A4195C /* Pods-iBunker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iBunker/Preview Content\"";
-				DEVELOPMENT_TEAM = 8468U436K8;
+				DEVELOPMENT_TEAM = U7KD5HX6WB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iBunker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -425,11 +519,12 @@
 		};
 		8B0C3F82235A4689000066E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF9C2DB1E6E07EE96AE6154 /* Pods-iBunker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iBunker/Preview Content\"";
-				DEVELOPMENT_TEAM = 8468U436K8;
+				DEVELOPMENT_TEAM = U7KD5HX6WB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iBunker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -466,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		579819AA237B9BF600E39BC8 /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/smartvipere75/bottombar-swiftui";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		579819AB237B9BF600E39BC8 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 579819AA237B9BF600E39BC8 /* RemoteSwiftPackageReference */;
+			productName = "BottomBar-SwiftUI";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B0C3F64235A4688000066E7 /* Project object */;
 }

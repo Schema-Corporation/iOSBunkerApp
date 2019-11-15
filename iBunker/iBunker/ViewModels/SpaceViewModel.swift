@@ -12,10 +12,16 @@ struct SpaceViewModel: Identifiable {
     
     var space: SpacesInfo
     
-    var id = UUID()
-    
     init(space: SpacesInfo) {
         self.space = space
+    }
+    
+    var id: Int {
+        return self.space.id
+    }
+    
+    var status: Int {
+        return self.space.status
     }
     
     var first_photo: String {
@@ -33,4 +39,19 @@ struct SpaceViewModel: Identifiable {
     var rent_price: String {
         return self.space.rent_price
     }
+    var description: String {
+        return self.space.description
+    }
+    
+    var height: String {
+        return self.space.height
+    }
+    var width: String {
+           return self.space.width
+    }
+    var area: String {
+        return self.space.area
+    }
+    
+    
 }

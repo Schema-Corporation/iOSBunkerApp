@@ -1,0 +1,6 @@
+framework module Pods_iBunker {
+  umbrella header "Pods-iBunker-umbrella.h"
+
+  export *
+  module * { export * }
+}
