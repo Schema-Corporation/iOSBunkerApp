@@ -10,20 +10,19 @@ import SwiftUI
 
 struct ImageView: View {
     @ObservedObject var imageLoader:ImageLoader
-     @State var image:UIImage = UIImage()
+    @State var image:UIImage = UIImage()
 
-     init(withURL url:String) {
+    init(withURL url:String) {
          imageLoader = ImageLoader(urlString:url)
-     }
+    }
     var body: some View {
         VStack {
             Image(uiImage: imageLoader.dataIsValid ? imageFromData(imageLoader.data!) : UIImage())
-                .resizable()
+                .resizable().frame(minWidth: 377 ,minHeight: 300)
                 .aspectRatio(contentMode: .fit)
                 .edgesIgnoringSafeArea(.horizontal)
         }
     }
-
 }
 
 struct ImageView_Previews: PreviewProvider {

@@ -26,19 +26,21 @@ struct SpacesDetailsView: View {
                     Text("\(space.address)").padding(.leading,30)
                   }.padding()
                   HStack{
-                    Text("Medidas del espacio: ").bold().padding(.leading,10)
-                  }
+                    Text("Medidas del espacio: ").bold().padding(.leading,20)
+                  }.padding()
                   HStack{
-                    Text("Largo: " + space.height + " m")
-            
+                    Text("Largo: " + space.height + " m").padding(.leading,100)
                         VStack{
                           Text("Área: " + space.width + " m²" )
                         }
                   }
                   HStack{
-                    Text("Ancho: " + space.width + " m")
+                    Text("Ancho: " + space.width + " m").padding(.leading,100)
                   }
 
+                  HStack {
+                    Text("Descripción del espacio: ").bold().padding(.leading,20)
+                  }
                  Spacer()
          
                

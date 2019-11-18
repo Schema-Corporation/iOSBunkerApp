@@ -21,7 +21,6 @@ struct BookingProcessStepOneView: View {
     
     @State private var showDetails  = false
     @State var empty: String = ""
-    @State var fakeWidth = 300
     
     @State var width: String = ""
     @State var area: String = ""
@@ -29,6 +28,8 @@ struct BookingProcessStepOneView: View {
     
     
     @State var wifiOn = true
+    
+    @ObservedObject var bookingIntention = BookingProcess()
     
     var body: some View {
         
@@ -57,19 +58,16 @@ struct BookingProcessStepOneView: View {
                     Toggle(isOn: $showGreeting) {
                         Text("Predeterminado")
                     }
-                VStack{
+                VStack {
                     if showGreeting {
                         TextField("Largo: " + space.height + " m", text: $empty).disabled(true)
                         TextField("Ancho: " + space.width + " m", text: $empty).disabled(true)
-                        TextField("Área: " + space.width + " m²", text: $empty).disabled(true)
+                        TextField("Área: " + space.area + " m²", text: $empty).disabled(true)
                         
-                    }else{
-                        //height = ""
-                        
+                    } else {
                         TextField("Largo", text: $height)
                         TextField("Ancho", text: $width)
-                        TextField("Área", text: $width)
-
+                        TextField("Área", text: $area)
                     }
                 }
                 
@@ -78,23 +76,29 @@ struct BookingProcessStepOneView: View {
             
             Section(header: Text("Servicios disponibles").font(.title)) {
                 VStack(spacing: 15) {
-                                  Button(action: {self.showDetails.toggle()}) {
-                                    if showDetails {
-                                                                         Image(systemName: "lightbulb.fill")
-                                    }else {
-                                        Image(systemName: "wifi") }
-                                  }
-
-                                 
+                      Button(action: {self.showDetails.toggle()}) {
+                        if showDetails {
+                            Image(systemName: "lightbulb.fill")
+                        } else {
+                            Image(systemName: "wifi") }
+                      }
                 }
-                   
             }
-        
             
+            Section(header: Text("Reservar espacios").font(.title)) {
+                VStack(spacing: 15) {
+                      Button(action: submit) {
+                        Text("Reservar")
+                      }
+                }
+            }
         }.navigationBarTitle("Solicitud de Reserva")
 
     }
-
+        
+    func submit() {
+        self.bookingIntention.bookingIntention(spaceId: self.space.id, startDate: self.startDate, endDate: self.endDate, monthlyFee: self.space.rent_price, periodicity: self.period, width: self.space.width, height: self.space.height)
+    }
 }
 
 

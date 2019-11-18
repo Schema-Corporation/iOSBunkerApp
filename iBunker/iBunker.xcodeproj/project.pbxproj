@@ -22,8 +22,10 @@
 		576FC5752361904200D63BDB /* SpacesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC5742361904200D63BDB /* SpacesDetailsView.swift */; };
 		57887EBA2367A28D006DAE93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D25E6235E31D500251EA9 /* LoginView.swift */; };
 		579819A9237B9BA000E39BC8 /* DashboardTabBarSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579819A8237B9BA000E39BC8 /* DashboardTabBarSUIView.swift */; };
-		579819AC237B9BF600E39BC8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 579819AB237B9BF600E39BC8 /* SwiftPackageProductDependency */; };
+		579819AC237B9BF600E39BC8 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 579819AB237B9BF600E39BC8 /* BottomBar-SwiftUI */; };
 		57E83D092376FD580043D067 /* SpaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E83D082376FD580043D067 /* SpaceListViewModel.swift */; };
+		57F1C9AE23820C0500001082 /* BookingProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1C9AD23820C0500001082 /* BookingProcess.swift */; };
+		57F1C9B1238248F400001082 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1C9B0238248F400001082 /* Extensions.swift */; };
 		57FA5096236488C4005B3BA2 /* DashboardTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */; };
 		7F4EFA9B237602620021C60B /* SpaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EFA98237600970021C60B /* SpaceViewModel.swift */; };
 		7F4EFA9C2376026F0021C60B /* SpacesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FC57223618DA500D63BDB /* SpacesRow.swift */; };
@@ -58,6 +60,8 @@
 		579819A8237B9BA000E39BC8 /* DashboardTabBarSUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBarSUIView.swift; sourceTree = "<group>"; };
 		579D25E6235E31D500251EA9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		57E83D082376FD580043D067 /* SpaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceListViewModel.swift; sourceTree = "<group>"; };
+		57F1C9AD23820C0500001082 /* BookingProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingProcess.swift; sourceTree = "<group>"; };
+		57F1C9B0238248F400001082 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBarView.swift; sourceTree = "<group>"; };
 		7F4EFA98237600970021C60B /* SpaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceViewModel.swift; sourceTree = "<group>"; };
 		7FA647D3235E02F40053C117 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -81,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579819AC237B9BF600E39BC8 /* BuildFile in Frameworks */,
+				579819AC237B9BF600E39BC8 /* BottomBar-SwiftUI in Frameworks */,
 				125CB52CAEA1FD7F75132163 /* Pods_iBunker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +139,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		57F1C9AF238248D300001082 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57F1C9B0238248F400001082 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7F4EFA97237600670021C60B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +178,7 @@
 		8B0C3F6E235A4688000066E7 /* iBunker */ = {
 			isa = PBXGroup;
 			children = (
+				57F1C9AF238248D300001082 /* Extensions */,
 				7F4EFA97237600670021C60B /* ViewModels */,
 				579D25E8235E31ED00251EA9 /* Resources */,
 				579D25E5235E31A600251EA9 /* Views */,
@@ -204,6 +217,7 @@
 			children = (
 				575F8EEA236017A300C360AE /* HttpAuth.swift */,
 				576FC56E236162CD00D63BDB /* GetSpacesAround.swift */,
+				57F1C9AD23820C0500001082 /* BookingProcess.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -214,7 +228,6 @@
 				E002677927211F7AC7A4195C /* Pods-iBunker.debug.xcconfig */,
 				0DF9C2DB1E6E07EE96AE6154 /* Pods-iBunker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -237,7 +250,7 @@
 			);
 			name = iBunker;
 			packageProductDependencies = (
-				579819AB237B9BF600E39BC8 /* SwiftPackageProductDependency */,
+				579819AB237B9BF600E39BC8 /* BottomBar-SwiftUI */,
 			);
 			productName = iBunker;
 			productReference = 8B0C3F6C235A4688000066E7 /* iBunker.app */;
@@ -268,7 +281,7 @@
 			);
 			mainGroup = 8B0C3F63235A4688000066E7;
 			packageReferences = (
-				579819AA237B9BF600E39BC8 /* RemoteSwiftPackageReference */,
+				579819AA237B9BF600E39BC8 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */,
 			);
 			productRefGroup = 8B0C3F6D235A4688000066E7 /* Products */;
 			projectDirPath = "";
@@ -348,6 +361,7 @@
 				5700DCDA237A268C00E423C5 /* BookingProcessStepOneView.swift in Sources */,
 				5700DCDC237A2FF500E423C5 /* ButtonView.swift in Sources */,
 				7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */,
+				57F1C9AE23820C0500001082 /* BookingProcess.swift in Sources */,
 				576FC5692361591E00D63BDB /* RegistrationView.swift in Sources */,
 				8BB68FC1235A5E6E00BD68EB /* ConfigurationView.swift in Sources */,
 				576FC56B236159F300D63BDB /* FindSpacesView.swift in Sources */,
@@ -360,6 +374,7 @@
 				8B0C3F93235A5DC4000066E7 /* UserDTO.swift in Sources */,
 				57FA5096236488C4005B3BA2 /* DashboardTabBarView.swift in Sources */,
 				8B0C3F74235A4688000066E7 /* ContentView.swift in Sources */,
+				57F1C9B1238248F400001082 /* Extensions.swift in Sources */,
 				57887EBA2367A28D006DAE93 /* LoginView.swift in Sources */,
 				7F4EFA9B237602620021C60B /* SpaceViewModel.swift in Sources */,
 				57183F0A2366B2EA00BB93C2 /* LocationManager.swift in Sources */,
@@ -563,7 +578,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		579819AA237B9BF600E39BC8 /* RemoteSwiftPackageReference */ = {
+		579819AA237B9BF600E39BC8 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/smartvipere75/bottombar-swiftui";
 			requirement = {
@@ -574,9 +589,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		579819AB237B9BF600E39BC8 /* SwiftPackageProductDependency */ = {
+		579819AB237B9BF600E39BC8 /* BottomBar-SwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 579819AA237B9BF600E39BC8 /* RemoteSwiftPackageReference */;
+			package = 579819AA237B9BF600E39BC8 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */;
 			productName = "BottomBar-SwiftUI";
 		};
 /* End XCSwiftPackageProductDependency section */

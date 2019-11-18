@@ -33,11 +33,12 @@ struct SpacesRow: View {
     var body: some View {
         VStack(alignment: .leading){
             
-                ImageView(withURL: space.first_photo).frame(minWidth:0, maxWidth: .infinity)
+                ImageView(withURL: space.first_photo)//.frame(minWidth:0, maxWidth: .infinity)
                     Text(space.title).font(.title).bold()
                     Text(space.address)
                     Text("$" + space.rent_price + "0")
-        }.padding(EdgeInsets(top:4, leading:0, bottom: 4, trailing: 0))
+        }.padding(EdgeInsets(top:2, leading:0, bottom: 2, trailing: 0))
+    
     }
 }
 

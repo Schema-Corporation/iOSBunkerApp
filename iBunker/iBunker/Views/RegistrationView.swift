@@ -57,7 +57,7 @@ struct RegistrationView: View {
         
     }
     func submit() {
-        self.manager.checkDetails(username: self.username, password: self.password)
+        self.manager.login(username: self.username, password: self.password)
     }
 }
 

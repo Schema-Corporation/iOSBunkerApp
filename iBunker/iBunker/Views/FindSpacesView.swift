@@ -36,6 +36,7 @@ struct FindSpacesView: View {
             
             }.navigationBarTitle(Text("Búsqueda de Espacios"))
         
+        
     }
 }
 

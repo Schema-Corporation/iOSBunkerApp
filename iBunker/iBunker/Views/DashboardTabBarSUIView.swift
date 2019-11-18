@@ -22,15 +22,6 @@ struct BasicView: View {
     "\(item.title) Detail"
 }
     
-
-
-
-
-
-
-
-
-
 var body: some View {
     VStack {
         Spacer()
