@@ -17,8 +17,8 @@ struct RootView: View {
             if manager.authenticated {
                 DashboardView()
             } else {
-                LoginView(manager: manager)
-                //DashboardView()
+                //LoginView(manager: manager)
+                DashboardView()
             }
         }
         

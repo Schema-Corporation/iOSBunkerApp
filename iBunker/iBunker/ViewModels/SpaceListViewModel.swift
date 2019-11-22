@@ -7,15 +7,19 @@
 //
 
 import Foundation
+import SwiftUI
 
 class SpaceListViewModel: ObservableObject {
   
-  @Published var spaces = [SpaceViewModel]()
+    @Published var spaces = [SpaceViewModel]()
+    @ObservedObject var locationManager = LocationManager()
   
   init() {
     GetSpacesAround().getSpacesAround(userLatitude: -12.046374, userLongitude:  -77.042793) { spaces in
-      
+    
+    // GetSpacesAround().getSpacesAround(userLatitude: userLatitude, userLongitude:  userLongitude) { spaces in
       if let spaces = spaces {
+        
         self.spaces = spaces.map(SpaceViewModel.init)
       }
       

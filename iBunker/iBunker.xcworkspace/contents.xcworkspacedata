@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:iBunker/Resources/Location/CurrentLocationGPX.gpx">
+   </FileRef>
+   <FileRef
       location = "group:iBunker.xcodeproj">
    </FileRef>
    <FileRef

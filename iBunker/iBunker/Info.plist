@@ -51,6 +51,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysWhenInUseUsageDescription</key>
+	<string>Necesitamos acceder a tu ubicación para obtener información de los lugares cercanos</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Necesitamos acceder a tu ubicación para obtener información de los lugares cercanos</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>

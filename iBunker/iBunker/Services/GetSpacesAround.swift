@@ -43,6 +43,21 @@ class GetSpacesAround {
     }
      */
     
+    @ObservedObject var locationManager = LocationManager()
+    
+    var userLatitude: Double {
+        return Double(locationManager.lastLocation?.coordinate.latitude ?? 0)
+    }
+    
+    var userLongitude: Double {
+        return Double(locationManager.lastLocation?.coordinate.longitude ?? 0)
+    }
+    
+    init() {
+        print("\(userLatitude)")
+        print("\(userLongitude)")
+    }
+    
     func getSpacesAround(userLatitude: Double, userLongitude: Double, completion: @escaping ([SpacesInfo]?) -> ()) {
         guard let url = URL(string: "https://bunker-258012.appspot.com/api/v1/spaces/info_around/") else { return }
         

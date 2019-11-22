@@ -12,6 +12,11 @@
 		5700DCDC237A2FF500E423C5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5700DCDB237A2FF500E423C5 /* ButtonView.swift */; };
 		57183F0A2366B2EA00BB93C2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57183F092366B2EA00BB93C2 /* LocationManager.swift */; };
 		571B73D2237E556700CE83E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571B73D1237E556600CE83E7 /* GoogleService-Info.plist */; };
+		572844DB2386B453002E9EB4 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572844DA2386B453002E9EB4 /* RequestView.swift */; };
+		572844DD2386C69F002E9EB4 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572844DC2386C69F002E9EB4 /* SettingsStore.swift */; };
+		572844DF2386C799002E9EB4 /* UserDefaultsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572844DE2386C799002E9EB4 /* UserDefaultsConfig.swift */; };
+		572844E12386C7B3002E9EB4 /* UserDefaultsPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572844E02386C7B3002E9EB4 /* UserDefaultsPropertyWrapper.swift */; };
+		572844E32386C867002E9EB4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572844E22386C867002E9EB4 /* OnboardingView.swift */; };
 		575F8EEB236017A300C360AE /* HttpAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEA236017A300C360AE /* HttpAuth.swift */; };
 		575F8EED2360186000C360AE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEC2360186000C360AE /* DashboardView.swift */; };
 		575F8EEF236018AD00C360AE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F8EEE236018AD00C360AE /* RootView.swift */; };
@@ -48,6 +53,11 @@
 		57183F092366B2EA00BB93C2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		57183F0B2366B61800BB93C2 /* CurrentLocationGPX.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CurrentLocationGPX.gpx; sourceTree = "<group>"; };
 		571B73D1237E556600CE83E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		572844DA2386B453002E9EB4 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		572844DC2386C69F002E9EB4 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		572844DE2386C799002E9EB4 /* UserDefaultsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConfig.swift; sourceTree = "<group>"; };
+		572844E02386C7B3002E9EB4 /* UserDefaultsPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPropertyWrapper.swift; sourceTree = "<group>"; };
+		572844E22386C867002E9EB4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		575F8EEA236017A300C360AE /* HttpAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpAuth.swift; sourceTree = "<group>"; };
 		575F8EEC2360186000C360AE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		575F8EEE236018AD00C360AE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -113,9 +123,9 @@
 		579D25E5235E31A600251EA9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8BB68FC0235A5E6E00BD68EB /* ConfigurationView.swift */,
 				579D25E6235E31D500251EA9 /* LoginView.swift */,
 				575F8EEC2360186000C360AE /* DashboardView.swift */,
+				8BB68FC0235A5E6E00BD68EB /* ConfigurationView.swift */,
 				575F8EEE236018AD00C360AE /* RootView.swift */,
 				576FC5682361591E00D63BDB /* RegistrationView.swift */,
 				576FC56A236159F300D63BDB /* FindSpacesView.swift */,
@@ -125,6 +135,8 @@
 				57FA5095236488C4005B3BA2 /* DashboardTabBarView.swift */,
 				5700DCD8237A1EFB00E423C5 /* BookingProcessStepOneView.swift */,
 				579819A8237B9BA000E39BC8 /* DashboardTabBarSUIView.swift */,
+				572844DA2386B453002E9EB4 /* RequestView.swift */,
+				572844E22386C867002E9EB4 /* OnboardingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +220,9 @@
 			children = (
 				8B0C3F90235A5D99000066E7 /* LoginDTO.swift */,
 				8B0C3F92235A5DC4000066E7 /* UserDTO.swift */,
+				572844DC2386C69F002E9EB4 /* SettingsStore.swift */,
+				572844DE2386C799002E9EB4 /* UserDefaultsConfig.swift */,
+				572844E02386C7B3002E9EB4 /* UserDefaultsPropertyWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -361,21 +376,26 @@
 				5700DCDA237A268C00E423C5 /* BookingProcessStepOneView.swift in Sources */,
 				5700DCDC237A2FF500E423C5 /* ButtonView.swift in Sources */,
 				7FA647D4235E02F40053C117 /* CircleImage.swift in Sources */,
+				572844DF2386C799002E9EB4 /* UserDefaultsConfig.swift in Sources */,
 				57F1C9AE23820C0500001082 /* BookingProcess.swift in Sources */,
 				576FC5692361591E00D63BDB /* RegistrationView.swift in Sources */,
 				8BB68FC1235A5E6E00BD68EB /* ConfigurationView.swift in Sources */,
 				576FC56B236159F300D63BDB /* FindSpacesView.swift in Sources */,
 				8B0C3F91235A5D99000066E7 /* LoginDTO.swift in Sources */,
 				7F4EFA9C2376026F0021C60B /* SpacesRow.swift in Sources */,
+				572844DB2386B453002E9EB4 /* RequestView.swift in Sources */,
 				576FC5752361904200D63BDB /* SpacesDetailsView.swift in Sources */,
 				8B0C3F72235A4688000066E7 /* SceneDelegate.swift in Sources */,
 				579819A9237B9BA000E39BC8 /* DashboardTabBarSUIView.swift in Sources */,
 				575F8EED2360186000C360AE /* DashboardView.swift in Sources */,
+				572844E32386C867002E9EB4 /* OnboardingView.swift in Sources */,
 				8B0C3F93235A5DC4000066E7 /* UserDTO.swift in Sources */,
 				57FA5096236488C4005B3BA2 /* DashboardTabBarView.swift in Sources */,
 				8B0C3F74235A4688000066E7 /* ContentView.swift in Sources */,
+				572844E12386C7B3002E9EB4 /* UserDefaultsPropertyWrapper.swift in Sources */,
 				57F1C9B1238248F400001082 /* Extensions.swift in Sources */,
 				57887EBA2367A28D006DAE93 /* LoginView.swift in Sources */,
+				572844DD2386C69F002E9EB4 /* SettingsStore.swift in Sources */,
 				7F4EFA9B237602620021C60B /* SpaceViewModel.swift in Sources */,
 				57183F0A2366B2EA00BB93C2 /* LocationManager.swift in Sources */,
 				575F8EEF236018AD00C360AE /* RootView.swift in Sources */,

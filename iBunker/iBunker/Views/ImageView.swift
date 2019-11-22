@@ -18,10 +18,12 @@ struct ImageView: View {
     var body: some View {
         VStack {
             Image(uiImage: imageLoader.dataIsValid ? imageFromData(imageLoader.data!) : UIImage())
-                .resizable().frame(minWidth: 377 ,minHeight: 300)
+                .resizable().frame(minWidth: 375 ,minHeight: 300)
                 .aspectRatio(contentMode: .fit)
                 .edgesIgnoringSafeArea(.horizontal)
-        }
+            
+        }.padding(.leading,0)
+        
     }
 }
 

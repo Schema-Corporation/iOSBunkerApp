@@ -11,19 +11,7 @@ import SwiftUI
 
 struct FindSpacesView: View {
     
-    
-    @ObservedObject var locationManager = LocationManager()
 
-
-    
-    var userLatitude: String {
-         return "\(locationManager.lastLocation?.coordinate.latitude ?? 0.00)"
-    }
-
-    var userLongitude: String {
-         return "\(locationManager.lastLocation?.coordinate.longitude ?? 0.00)"
-    }
-    
     
     @ObservedObject private var spaceListViewModel = SpaceListViewModel()
     
@@ -32,9 +20,10 @@ struct FindSpacesView: View {
             List (self.spaceListViewModel.spaces){ space in
                 NavigationLink(destination: SpacesDetailsView(space: space)) {
                     SpacesRow(space)
+                    
                 }
             
-            }.navigationBarTitle(Text("Búsqueda de Espacios"))
+        }
         
         
     }

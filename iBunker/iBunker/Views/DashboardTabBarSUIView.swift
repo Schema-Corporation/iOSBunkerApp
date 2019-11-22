@@ -31,24 +31,35 @@ var body: some View {
 
 struct DashboardTabBarSUIView : View {
     @State private var selectedIndex: Int = 0
+    @State private var showAlert = false
 
     var selectedItem: BottomBarItem {
         items[selectedIndex]
     }
 
+    var alert: Alert {
+        Alert(title: Text("iOScreator"), message: Text("Hello SwiftUI"), dismissButton: .default(Text("Dismiss")))
+    }
 var body: some View {
         NavigationView {
             VStack {
                 BasicView(item: selectedItem)
-                    .navigationBarTitle(Text(selectedItem.title))
+                   // .navigationBarTitle(Text(selectedItem.title))
                 
                 if(selectedItem.title == "Search"){
                 FindSpacesView()
+                    //s.navigationBarTitle("search")
                     
                 }
                 if(selectedItem.title == "Home"){
                 //firstView()
-                    Text("Second View")
+                    Button(action: {
+                        self.showAlert.toggle()
+                    }) {
+                        Text("Show Alert")
+                    }
+                    // 4.
+                    .alert(isPresented: $showAlert, content: { self.alert })
                 }
                 if(selectedItem.title == "Profile"){
                 ConfigurationView()
